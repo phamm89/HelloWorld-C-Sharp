@@ -6,9 +6,12 @@ namespace myApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("The current time is " + DateTime.Now);
-            Console.Write("Press any key to continue...");
+            Console.WriteLine("\nWhat is your name? ");
+            var name = Console.ReadLine();
+            var date = DateTime.Now;
+
+            Console.WriteLine($"\nHello, {name}! The current date is {date:d} at {date:t}!");
+            Console.Write("\nPress any key to continue...");
             Console.ReadKey(true);
         }
     }
