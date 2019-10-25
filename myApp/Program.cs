@@ -11,6 +11,7 @@ namespace myApp
             var date = DateTime.Now;
 
             Console.WriteLine($"\nHello, {name}! The current date is {date:d} at {date:t}!");
+            Console.WriteLine("\nC# is a great language to learn.");
             Console.Write("\nPress any key to continue...");
             Console.ReadKey(true);
         }
